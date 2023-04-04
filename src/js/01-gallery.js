@@ -9,7 +9,7 @@
 //---------------
 //dodaję bibliotekę SimpeLightbox
 //importuję galerię obazów z gallery- items
-//przypisuje zmiennej const .gallery
+//pobieram gallery- za pomocą querySelector
 //
 
 // Add imports above this line
@@ -21,24 +21,29 @@ import { galleryItems } from './gallery-items';
 console.log(galleryItems);
 
 const gallery = document.querySelector(".gallery");
-const markup = createItemsMarkup(galleryItems);
-gallery.insertAdjacentHTML("beforeend", markup);
+ const markup = createItemsMarkup(galleryItems);
+ gallery.insertAdjacentHTML("beforeend", markup);
 
-function createItemsMarkup(item) {
-    return galleryItems
-      .map(({ preview, original, description }) => {
-        return `<div class="gallery__item">
-    <a class="gallery__link" href="${original}">
-    <img
-    class="gallery__image"
-    src="${preview}"
-    alt="${description}"/></a></div>`;})
-        .join("");
-     
-    }
 
-    const lightbox = new SimpleLightbox('.gallery a', {
-        caption: true,
-        captionsDate: 'alt',
-        captionDelay: 50,
-    });
+
+ function createItemsMarkup(item) {
+ return galleryItems
+   .map(({ preview, original, description }) => {
+     return `<div class="gallery__item">
+ <a class="gallery__link" href="${original}">
+ <img
+ class="gallery__image"
+ src="${preview}"
+ alt="${description}"/></a></div>`;})
+     .join("");
+  
+ }
+
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  caption: true,
+  captionsData: 'alt',
+  captionDelay: 50,
+});
+
+   
