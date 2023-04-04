@@ -8,6 +8,7 @@
 //w terminalu wpisałem nmp install i npm start.
 //---------------
 //dodaję bibliotekę SimpeLightbox
+//pobieram galerię obazów z gallery- items
 
 // Add imports above this line
 import SimpleLightbox from "simplelightbox";
