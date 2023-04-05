@@ -1,8 +1,8 @@
  //zapoznaję się z dokumentacją biblioteki odtwarzacza Vimeo
  //deklaruję zmienną playrtCurrentTime, któa odpowiada za aktualny czas video
- //do zmiennej iframe pobieram id video
+ //do zmiennej iframe pobieram poprzez id video
  //zmienną player nawiązuje do sekcji pre-existing player w bibliotece
- //zmienną pauseTime przekazuje event w f.strzałkowej 
+ //zmiennej pauseTime przekazuje jej event w f.strzałkowej 
  //dla magazynu lokalnego(localStorage) używam metody .setItem za pomocą której mogę dodać nowy wpis jako parę klucz:wartość
  //przy pomocy dokumentacji metody .on rozpoczynam śledźenie "timpeupdate" - aktualizacji czasu odtwarzania
  //przy przeładowaniu strony użyto metody .SetCurrentTime wzorując się na bibliotece
