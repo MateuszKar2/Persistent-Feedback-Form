@@ -1,3 +1,10 @@
+
+//instaluje biblioteki 'lodash.throttle' i '@vimeo/player'
+//deklaruje zmienną playerCurrentTime która odpowiada za aktualny czas video
+//do zmiennej iframe pobieram poprzez id video
+//zmienną player nawiązuje do sekcji pre-existing player w bibliotece
+ 
+
 import throttle from 'lodash.throttle';
 import Player from '@vimeo/player';
 
