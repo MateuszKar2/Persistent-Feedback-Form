@@ -1,23 +1,9 @@
- //zapoznaję się z dokumentacją biblioteki odtwarzacza Vimeo
-//zmienną player nawiązuje do sekcji pre-existing player w bibliotece
-//deklaruję zmienną playrtCurrentTime, któa odpowiada za aktualny czas video
-//do zmiennej iframe pobieram id video
-//zmiennej pauseTime przekazuje jej event w f.strzałkowej 
-//dla magazynu lokalnego(localStorage) używam metody .setItem za pomocą której mogę dodać nowy wpis jako parę klucz:wartość
-//przy pomocy dokumentacji metody .on rozpoczynam śledźenie "timpeupdate" - aktualizacji czasu odtwarzania
-//przy przeładowaniu strony użyto metody .SetCurrentTime wzorując się na bibliotece
-//do magazyna lokalnego(localStorage) użyłem metody .getItem która zwraca wartość (klucza)
-//wykorzystałem operator logiczny(or) tj. ||, jeżeli jeden operand jest true zwraca true
-
-
-
 import throttle from 'lodash.throttle';
 import Player from '@vimeo/player';
 
-const player = new Player(iframe);
 const playerCurrentTime = 'videoplayer-current-time';
 const iframe = document.querySelector('#vimeo-player');
-
+const player = new Player(iframe);
 
 const pauseTime = e => {
   localStorage.setItem(playerCurrentTime, e.seconds);
