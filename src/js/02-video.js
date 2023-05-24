@@ -2,12 +2,13 @@
  //deklaruję zmienną playrtCurrentTime, któa odpowiada za aktualny czas video
  //do zmiennej iframe pobieram poprzez id video
  //zmienną player nawiązuje do sekcji pre-existing player w bibliotece
- //zmiennej pauseTime przekazuje jej event w f.strzałkowej 
+ //zmiennej pauseTime przekazuje jej event w funkcji strzałkowej 
  //dla magazynu lokalnego(localStorage) używam metody .setItem za pomocą której mogę dodać nowy wpis jako parę klucz:wartość
  //przy pomocy dokumentacji metody .on rozpoczynam śledźenie "timpeupdate" - aktualizacji czasu odtwarzania
  //przy przeładowaniu strony użyto metody .SetCurrentTime wzorując się na bibliotece
  //do magazyna lokalnego(localStorage) użyłem metody .getItem która zwraca wartość (klucza)
  //wykorzystałem operator logiczny(or) tj. ||, jeżeli jeden operand jest true zwraca true
+ //wykorzystałem instrukcje then/catch do obsługi błędu. Jeżeli then 
  
  
  import throttle from 'lodash.throttle';
