@@ -1,4 +1,3 @@
-
 //importuję galerię obazów z gallery-items
 //pobieram gallery- za pomocą querySelector
 //przypisuje zmiennej "markup"- createItemsMarkup o parametrze(galerię obrazów)
